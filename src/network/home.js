@@ -1,15 +1,15 @@
 import {request} from "./request";
-
+//获取首页相关的轮播图
 export function getHomeMultidata() {
   return request({
     url: '/home/multidata'
   })
 }
-
-export function getHomeGoods(type, page) {
+//获取首页相关的商品
+export function getHomeGoods(type,page){
   return request({
-    url: '/home/data',
-    params: {
+    url:'/home/data',
+    params:{
       type,
       page
     }
